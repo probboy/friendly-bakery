@@ -1,0 +1,29 @@
+.features img {
+    @include size(100%, auto);
+    border-radius: $default-border-radius
+}
+
+.customer img {
+    @include size(150px, auto);
+    border-radius: $default-border-radius
+}
+
+.hero .overlay {
+    background: rgba($yellow, 0.6)
+}
+
+.testimonials {
+    background: $yellow;
+    color: red;
+    text-align: center;
+    blockquote {
+        text-align: center;
+    }
+    .name {
+        display: block;
+    }
+    .quote {
+        font-style: italic;
+        font-family: $serif;
+    }
+}

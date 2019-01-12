@@ -31,21 +31,21 @@ module.exports = function(grunt) {
 			sass: {
 
 				files: [
-					'public/scss/*.scss'
+					'public/scss/**/*.scss'
 				],
 				tasks : [
 					'sass'
 				]
 			},
-			scripts: {
+			// scripts: {
 
-				files: [
-					'public/js/*.js'
-				],
-				tasks : [
-					'uglify'
-				]
-			}
+			// 	files: [
+			// 		'public/js/*.js'
+			// 	],
+			// 	tasks : [
+			// 		'uglify'
+			// 	]
+			// }
 		},
 
 		/**
@@ -53,13 +53,13 @@ module.exports = function(grunt) {
 		* Minify JavaScript files
 		* https://www.npmjs.com/package/grunt-contrib-uglify
 		*/
-		uglify: {
-			my_target:{
-				files: {
-					'js/scripts.js' : ['node_modules/jquery/dist/jquery.js', 'public/js/scripts.js']
-				}
-			}
-		}
+		// uglify: {
+		// 	my_target:{
+		// 		files: {
+		// 			'js/scripts.js' : ['node_modules/jquery/dist/jquery.js', 'public/js/scripts.js']
+		// 		}
+		// 	}
+		// }
 
 
 	});
