@@ -5,7 +5,7 @@ require_relative "helpers"
 get "/" do
   @page_title = "Warren's AI Cake Shop"
   @body_id = "home"
-  @site_title = "Cake Shop"
+  @site_title = "Warren's AI Cake Shop"
   render_view :index
 end
 
