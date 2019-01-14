@@ -5,4 +5,8 @@ jQuery(function( $ ) {
 	// Load Backstretch arguments
 	$(".hero").backstretch("/images/black-forest-cake.jpg");
 
+
+
+   
+    
 });

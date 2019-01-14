@@ -32,8 +32,8 @@ $susy: ( columns: 12, gutters: 1/6, global-box-sizing: border-box, );
 
 .sidebar {
     @include susy-breakpoint($large) {
-        @include span(4);
-        @include last;
+        @include span(12);
+        
     }
 }
 
