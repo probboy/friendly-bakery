@@ -580,6 +580,15 @@ all-buttons-active {
   color: black;
   font-size: 1em; }
 
+.header-nav {
+  font-size: 2em; }
+  .header-nav a {
+    color: #582630;
+    text-decoration: underline dotted; }
+  .header-nav a:hover {
+    color: #582630;
+    text-decoration: underline; }
+
 /* Styles for social media menu */
 /* Find src URL and add in correct social media icon. */
 .social-menu li a:before {
