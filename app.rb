@@ -72,7 +72,7 @@ post "/" do
   # sets up the API kwy
 
   sg = SendGrid::API.new(
-    api_key: "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",
+    api_key: ENV["SENDGRID_API_KEY"],
   )
 
   # sends the email
