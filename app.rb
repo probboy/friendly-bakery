@@ -57,19 +57,15 @@ post "/" do
   content = SendGrid::Content.new(
     type: "text/plain",
     value: "Dear " + @name + ",\n
-    Attached is the catalogue of our bakery. Enjoy!\n
-    Sincerely, Warren",
+    Attached is the link to the catalogue of our bakery. Enjoy!\n
+    Sincerely, \n
+    Warren\n
+    https://fathomless-island-16806.herokuapp.com/catalogue.pdf",
   )
 
   # create a email object with from, to, subject, and content
   mail = SendGrid::Mail.new(from, subject, to, content)
-  attachment = Attachment.new
-  attachment.content = "TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4gQ3JhcyBwdW12"
-  attachment.type = "application/pdf"
-  attachment.filename = "/catalogue.pdf"
-  attachment.disposition = "attachment"
-  attachment.content_id = "Catalogue"
-  mail.add_attachment(attachment)
+
   # sets up the API kwy s
 
   sg = SendGrid::API.new(
@@ -79,5 +75,5 @@ post "/" do
   # sends the email
   response = sg.client.mail._("send").post(request_body: mail.to_json)
 
-  erb :post
+  render_view :post
 end
