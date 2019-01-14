@@ -91,7 +91,7 @@
             "photo_src" : "/images/products/cake-wedding.jpg"
         },
         {
-            "prod_name" : "Gigerbread",
+            "prod_name" : "Gingerbread",
             "prod_id" : "CO-03",
             "retail_price" : 19.99,
             "description" : "Our ginerbread is made with fresh squeezed ginger juice. It has a more gingery taste than traditional ginerbread. Of course, out AI algorithm will have determine the optimal amount of ginger juice we put in.",
@@ -123,10 +123,10 @@
             "photo_src" : "/images/products/muffin-velvet.jpeg"
         },
         {
-            "prod_name" : "M&M's Cookies",
+            "prod_name" : "M and M's Cookies",
             "prod_id" : "CO-05",
             "retail_price" : 12.99,
-            "description" : "Our traditional M&M's cookies is surely to delight your eyes and palate.",
+            "description" : "Our traditional M and M's cookies is surely to delight your eyes and palate.",
             "in_stock" : true,
             "photo_src" : "/images/products/cookie-m-and-m.jpg"
         },

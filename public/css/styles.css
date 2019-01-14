@@ -443,13 +443,13 @@ all-text-inputs-active {
   border: 1px solid #00f; }
 
 button, [type='button'], [type='reset'], [type='submit'] {
-  background-color: #0f0;
+  background-color: #582630;
   border: 1px solid grey;
-  color: #582630;
+  color: #f7ee7f;
   padding: 10px; }
 
 button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus, button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
-  background-color: #0f0; }
+  background-color: #f1a66a; }
 
 all-buttons-active {
   background-color: #00f; }
@@ -457,7 +457,7 @@ all-buttons-active {
 .social-menu a {
   color: #f7ee7f; }
   .social-menu a:before {
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     padding: 0 20px 0 0; }
   .social-menu a.twitter:before {
     content: '\f099'; }
@@ -574,6 +574,11 @@ all-buttons-active {
   .testimonials .quote {
     font-style: italic;
     font-family: "Playfair Display", serif; }
+
+.welcometext {
+  font-weight: 900;
+  color: black;
+  font-size: 1em; }
 
 /* Styles for social media menu */
 /* Find src URL and add in correct social media icon. */

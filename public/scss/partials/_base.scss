@@ -52,14 +52,14 @@ h1,h2,h3,h4,h5,h6 {
 //buttons
 
 #{$all-buttons} {
-    background-color: #0f0;
+    background-color: $maroon;
     border: 1px solid grey;
-    color: $maroon;
+    color: $yellow;
     padding: 10px;
 }
 
 #{$all-buttons-focus},#{$all-buttons-hover} {
-    background-color: #0f0;
+    background-color: $orange;
 }
 
 #{all-buttons-active} {
