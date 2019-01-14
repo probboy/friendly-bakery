@@ -2,6 +2,7 @@ require "sinatra"
 require "sendgrid-ruby"
 include SendGrid
 require "json"
+
 require_relative "helpers"
 
 get "/" do
