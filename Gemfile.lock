@@ -4,6 +4,7 @@ GEM
     email_address (0.1.11)
       netaddr (~> 2.0)
       simpleidn
+    json (2.1.0)
     mustermann (1.0.3)
     netaddr (2.0.3)
     rack (2.0.6)
@@ -30,6 +31,7 @@ PLATFORMS
 
 DEPENDENCIES
   email_address
+  json
   sendgrid-ruby
   sinatra
 

@@ -2,6 +2,7 @@ require "sinatra"
 require "sendgrid-ruby"
 include SendGrid
 require "email_address"
+require "json"
 
 require_relative "helpers"
 
@@ -54,7 +55,13 @@ post "/" do
 
     # sends the email
     response = sg.client.mail._("send").post(request_body: mail.to_json)
+    puts response.status_code
 
+    # display http response body
+    puts response.body
+
+    # display http response headers
+    puts response.headersruby
     render_view :post
   else
     render_view :nopost
