@@ -1,7 +1,8 @@
 require "sinatra"
 require "sendgrid-ruby"
 include SendGrid
-require "json"
+# require "json"
+#require "mail"
 
 require_relative "helpers"
 
@@ -29,6 +30,13 @@ end
 post "/" do
   @name = params["name"]
   @email = params["email"]
+
+  # Mail.deliver do
+  #   from "warren.w.tai@gmail.com"
+  #   to @email
+  #   subject "Our Catalogue"
+  #   body File.read("public/body.txt")
+  # end
 
   from = SendGrid::Email.new(email: "warren.w.tai@gmail.com")
   to = SendGrid::Email.new(email: @email)
@@ -59,6 +67,6 @@ post "/" do
   puts response.body
 
   # display http response headers
-  puts response.headersruby
+  puts response.headers
   render_view :post
 end
